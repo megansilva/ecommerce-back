@@ -32,11 +32,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // create a new category
 
-  Category.createNew({
-    category_new: req.body.category_new
-  })
-
-  res.json({message: "New category has been added"})
+  
 });
 
 router.put('/:id', (req, res) => {
